@@ -1,0 +1,9 @@
+#ignore
+build/*
+out/*
+debug/*
+.vscode/*
+CMakeUserPresets.json
+
+#allow
+!debug/*.jdebug

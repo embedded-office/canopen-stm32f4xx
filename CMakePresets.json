@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "build/${presetName}",
+      "toolchainFile": "cmake/toolchain-gcc_cortex-m4.cmake",
+      "cacheVariables": {
+        "CPM_SOURCE_CACHE": "build/_deps"
+      }
+    },
+    {
+      "name": "debug",
+      "inherits": "base",
+      "displayName": "GCC-ARM (Cortex-M4) - Debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "release",
+      "inherits": "base",
+      "displayName": "GCC-ARM (Cortex-M4) - Release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ]
+}
