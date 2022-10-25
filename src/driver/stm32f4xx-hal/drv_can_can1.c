@@ -44,8 +44,8 @@ typedef struct PIN_ASSIGN_T {
 ******************************************************************************/
 
 /* default pin assignment: CAN_RX -> PB8, CAN_TX -> PB9 */
-#define CAN1_PIN_RX_SEL  0
-#define CAN1_PIN_TX_SEL  0
+#define CAN1_PIN_RX_SEL  1
+#define CAN1_PIN_TX_SEL  1
 
 /******************************************************************************
 * PRIVATE VARIABLES
@@ -65,14 +65,14 @@ static PIN_ASSIGN Can1Pin_Tx[] = {
 };
 
 static BAUDRATE_TBL BaudrateTbl[] = {
-    {   10000, 300, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
-    {   20000, 150, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
+    {   10000, 250, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
+    {   20000, 125, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
     {   50000,  60, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
-    {  125000,  24, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
-    {  250000,  12, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
-    {  500000,   6, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
-    {  800000,   4, CAN_SJW_1TQ, CAN_BS1_13TQ, CAN_BS2_3TQ },  /* SP: 82,4%, ERR: -0,74% */
-    { 1000000,   3, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
+    {  125000,  20, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
+    {  250000,  10, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
+    {  500000,   5, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_2TQ },  /* SP: 88,9%, ERR:     0% */
+    {  800000,   3, CAN_SJW_1TQ, CAN_BS1_15TQ, CAN_BS2_3TQ },  /* SP: 84,2%, ERR: -1,32% */
+    { 1000000,   3, CAN_SJW_1TQ, CAN_BS1_12TQ, CAN_BS2_2TQ },  /* SP: 86,7%, ERR:     0% */
     { 0, 0, 0, 0, 0 }
 };
 

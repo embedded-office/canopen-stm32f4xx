@@ -34,7 +34,7 @@ target_sources(canopen-stm32f4xx
     config/system_stm32f4xx.c
     # driver
     driver/stm32f4xx-hal/drv_can_can1.c
-    driver/stm32f4xx-hal/drv_nvm_fmpi2c1_at24C256.c
+    driver/stm32f4xx-hal/drv_nvm_fmpi2c1_at24c256.c
     driver/stm32f4xx-hal/drv_timer_tim2.c
 )
 
