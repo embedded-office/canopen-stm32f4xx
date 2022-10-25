@@ -23,7 +23,7 @@ void OnProjectLoad (void) {
   // Dialog-generated settings
   //
   Project.AddPathSubstitute ("../", "$(ProjectDir)");
-  Project.SetDevice ("STM32F769NI");
+  Project.SetDevice ("STM32F446ZE");
   Project.SetHostIF ("USB", "");
   Project.SetTargetIF ("SWD");
   Project.SetTIFSpeed ("4 MHz");
