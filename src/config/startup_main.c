@@ -77,10 +77,10 @@ static void SystemClock_Config(void)
     RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
     RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
 
-    /* Input frequency HSE = 25MHz */
-    /* SYSCLK = ((HSE / 15) * 216) / 2 = 180 MHz */
-    RCC_OscInitStruct.PLL.PLLM = 15;
-    RCC_OscInitStruct.PLL.PLLN = 216;
+    /* Input frequency HSE = 8MHz */
+    /* SYSCLK = ((HSE / 4) * 180) / 2 = 180 MHz */
+    RCC_OscInitStruct.PLL.PLLM = 4;
+    RCC_OscInitStruct.PLL.PLLN = 180;
     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
     RCC_OscInitStruct.PLL.PLLQ = 2;
     RCC_OscInitStruct.PLL.PLLR = 2;
